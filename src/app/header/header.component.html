@@ -14,18 +14,25 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a class="dropdown-toggle" role="button" href="#">
-            Manage
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">Save data</a>
-              <a href="#">Fetch data</a>
-            </li>
-          </ul>
-        </li>
+        <div class="row">
+          <div class="col-xs-12">
+            <div ngbDropdown>
+              <button
+                class="btn btn-primary my-auto"
+                style="margin-top: 7px"
+                id="dropdownBasic1"
+                ngbDropdownToggle
+              >
+                Manage
+                <span class="caret"></span>
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <li ngbDropdownItem><a href="#">Save Data</a></li>
+                <li ngbDropdownItem><a href="#">Fetch Data</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
       </ul>
     </div>
   </div>
